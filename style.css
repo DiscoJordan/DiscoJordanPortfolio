@@ -148,14 +148,14 @@
                 color: #3A3A3A;
                 margin-bottom: 31px;
             }
-            .mail__link{
+            .mail__link,.tel{
                 color: #3A3A3A ;
                 text-decoration: none;
                 transition: 0.1s ease-in-out;
 
             }
 
-            .mail__link:hover{
+            .mail__link:hover,.tel:hover{
                 color:#FF7A00}
 
             .social__media {
@@ -272,10 +272,13 @@
             transition: 0.1s ease-in-out;
             display: block;
           }
-          .line img{
-              max-width: 100%;
-             object-fit: cover;
+
+        .line {
+              max-width: 98.5%;
+            height: 2px;
+             background-color: #c4c4c4 ;
           }
+
 
             a.rsm__btn:hover{
                 background: url("pic/resumebtn_orange.svg");
@@ -348,6 +351,7 @@
             }
             .date{
                 text-align: right;
+                padding-top: 3px;
             }
             .experience__stat{
                 margin: auto auto;
@@ -555,20 +559,30 @@
         }
         @media (max-width:767px) {
             .logo{
-                font-size: 30px;
+                font-size: 23px;
             }
             .main_link{
-                font-size: 10px;
+                font-size: 20px;
             }
             .nav{
-                padding-top: 30px;
+                padding-top: 14px;
+            }
+            .main__image{
+                padding-top: 50px;
             }
             .main__info{
                 text-align: center;
-
+                padding: 0;
+                margin: auto;
             }
             .my__name, .ux__ui, .designer__from{
                 font-size: 26px;
+                padding: 0;
+                margin: 0;
+            }
+            .info{
+                padding: 10px 0 ;
+                margin: 0;
             }
            .my__designs__link{
                font-size: 30px;
@@ -577,14 +591,26 @@
            .My__designs{
                max-width: 200px;
                height: 34px;
-               margin: 30px auto 0;
+               margin: 40px auto 0;
 
            }
            .rsm__btn{
-               margin: auto;
+               margin: auto auto 20px;
            }
            .resume{
                padding-bottom: 40px;
+           }
+           .resume__info{
+               padding-top: 30px;
+           }
+           .experience__stat__info{
+               margin: 30px 0;
+           }
+           .experience__h1{
+               margin-top: 17px;
+           }
+           .skills__card{
+               padding: 20px 20px;
            }
 
         }
