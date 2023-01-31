@@ -17,6 +17,7 @@ h2,a{
     color: #ffffff;
     font-weight: 600;
     font-size: 24px;
+
 }
 .header{
     width: 100%;
@@ -73,15 +74,13 @@ h2,a{
             margin-right: auto;
             margin-left: auto;
             max-width: 750px;
-
-
         }
         .case_card:hover a{
             color: #fd7901;
-        }
-        .case_card:hover .case_card_photos{
-            opacity: 1;
 
+        }
+        .case_card:hover .case_card_photos {
+            filter: none;
         }
 
             .case_card_text, .second_floor_photos, .case_cards{
@@ -98,7 +97,8 @@ h2,a{
                 background-color: #c4c4c4;
             }
             .case_card_photos{
-                opacity: 0.9;
+                transition: 0.2s ease-in-out;
+                filter: grayscale(50%);
                 max-width: 750px;
                 overflow: hidden;
             }
@@ -113,15 +113,19 @@ h2,a{
             .second_photo_div, .third_photo_div{
                 max-width: 750px;
                 overflow: hidden;
-
+            }
+            .second_photo_div{
+                margin-right: 2%;
             }
             .second_photo{
+
                 object-fit: cover;
                 max-width: 100%;
                 max-height: 100%;
                 border-bottom-left-radius: 10px;
             }
             .third_photo{
+
                 object-fit: cover;
                 max-width: 100%;
                 max-height: 100%;
