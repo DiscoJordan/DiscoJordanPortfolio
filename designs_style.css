@@ -98,7 +98,7 @@ h2,a{
             }
             .case_card_photos{
                 transition: 0.2s ease-in-out;
-                filter: grayscale(55%);
+                filter: contrast(50%) blur(2px);
                 max-width: 750px;
                 overflow: hidden;
             }
