@@ -511,13 +511,13 @@
 
             }
             .my__designs__link{
-                ;
                 color: white;
                 font-weight: 700;
                 font-size: 75px;
                 transition: 0.2s ease-out;
 
             }
+
         .card:hover .date h5{
             color: #FF7A00;
         }
