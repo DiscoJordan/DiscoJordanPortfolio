@@ -59,8 +59,6 @@
 
         .intro {
             padding-bottom: 30px;
-
-
             }
 
             .intro__inner {
@@ -75,14 +73,12 @@
                 margin: auto auto;
                 width: auto;
                 padding-top: 30px;
-
             }
             .my__name{
                 font-size: 36px;
                 font-weight: 400;
                 margin: 0;
                 color: #3A3A3A;
-
             }
             .ux__ui{
 
@@ -122,91 +118,8 @@
 
             .social__media {
                 display: flex;
-            }
-            .sm {
-                justify-content: center;
-                display: flex;
-            }
-
-            a.tg{
-                background: url(pic/telegram.svg);
-                margin-right: 20px;
-                width: 53px;
-                transition: 0.1s ease-in-out;
-                height: 53px;
-                display: block;
-            }
-
-            a.tg:hover{
-                background: url("pic/telegram_orange.svg");
-            }
-            a.in{
-                background: url(pic/linkedin.svg);
-                margin-right: 20px;
-                width: 53px;
-                transition: 0.1s ease-in-out;
-                height: 53px;
-                display: block;
-            }
-
-            a.in:hover{
-                background: url("pic/linkedin_orange.svg");
-            }
-
-            a.be{
-                background: url(pic/behance.svg);
-                width: 53px;
-                transition: 0.1s ease-in-out;
-                height: 53px;
-                display: block;
-            }
-
-            a.be:hover{
-                background: url("pic/behance_orange.svg");
-            }
-
-            a.tg_g{
-                background: url(pic/tg_gray.svg);
-                margin-right: 20px;
-                background-size: 40px;
-                width: 40px;
-                transition: 0.1s ease-in-out;
-                height: 40px;
-                display: block;
-            }
-
-            a.tg_g:hover{
-                background: url("pic/telegram_orange.svg");
-                background-size: 40px;
-            }
-            a.in_g{
-                margin-right: 20px;
-
-                background: url(pic/linkedin_gray.svg);
-                background-size: 40px;
-                width: 40px;
-                transition: 0.1s ease-in-out;
-                height: 40px;
-                display: block;
-            }
-
-            a.in_g:hover{
-                background: url("pic/linkedin_orange.svg");
-                background-size: 40px;
-            }
-
-            a.be_g{
-                background: url(pic/behance_gray.svg);
-                background-size: 40px;
-                width: 40px;
-                transition: 0.1s ease-in-out;
-                height: 40px;
-                display: block;
-            }
-
-            a.be_g:hover{
-                background: url("pic/behance_orange.svg");
-                background-size: 40px;
+                justify-content: space-between;
+                max-width: 350px;
             }
 
         .resume{
@@ -244,9 +157,6 @@
             .line2{
                 margin-top: 20px;
             }
-
-
-
             a.rsm__btn:hover{
                 background: url("pic/resumebtn_orange.svg");
             }
@@ -511,7 +421,6 @@
             background-color: #3a3a3b;
             margin:  0 auto;
             padding-top: 5px;
-
         }
         .rights{
             text-align: center;
@@ -521,9 +430,24 @@
 
         }
         .sm{
+            justify-content: space-around;
+            display: flex;
             padding: 6px 20px;
             margin: 0 auto;
+            max-width: 300px;
         }
+        .link_f{
+            filter: grayscale(100%);
+            width: 40px;
+            transition: 0.1s ease-in-out;
+        }
+        .social__media .link_f{
+            width: 50px;
+        }
+        .link_f:hover{
+            filter: none;
+        }
+
         @media (max-width:1200px) {
             .container{
                 margin: 0 auto;
