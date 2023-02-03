@@ -21,7 +21,7 @@
             }
 
             .header__inner{
-                max-width: 1720px;
+                max-width: 1820px;
                 margin: 0 auto;
                 display: flex;
                 justify-content: space-between;
@@ -126,7 +126,7 @@
             width: auto;
             height: auto;
             background-color: #1E2225;
-            padding-bottom: 100px;
+            padding-bottom: 50px;
            }
           .resume__info{
 
@@ -140,12 +140,9 @@
             flex-wrap: wrap;
           }
 
-          a.rsm__btn{
-            background: url(pic/resumebutton.svg);
-            width: 179px;
-            height: 58px;
+          .rsm__btn{
+            filter: grayscale(100) brightness(2);
             transition: 0.1s ease-in-out;
-            display: block;
           }
 
         .line, .line2 {
@@ -157,8 +154,8 @@
             .line2{
                 margin-top: 20px;
             }
-            a.rsm__btn:hover{
-                background: url("pic/resumebtn_orange.svg");
+            .rsm__btn:hover{
+                filter: none;
             }
             .resume__h1{
                 color: #fff ;
@@ -223,8 +220,6 @@
 
             }
             .card__info{
-
-
             }
             .date{
                 text-align: right;
@@ -269,7 +264,6 @@
                 position: fixed;
            }
             .skills__cards{
-
                 height: auto;
                 margin: 0 auto;
                 padding-bottom: 45px;
@@ -286,133 +280,43 @@
             }
 
             .skills__card{
-
+                width: 110px;
                 height: 131px;
                 margin: auto;
                 text-align: center;
 
             }
+            .skill_icon{
 
-
-            .Figma{
-                background: url(pic/Figma.svg);
-                width: 115px;
-                transition: 0.1s ease-in-out;
-                height: 131px;
-                margin: 0 auto;
-
+                object-fit: cover;
+                transition: 0.2s ease-in-out;
+                opacity: 0.5;
             }
-            .skills__card:hover .Figma{
-
-                background: url("pic/Figma_orange.svg")
-            }
-
-            .PhotoShop{
-                background: url(pic/PhotoShop.svg);
-                width: 115px;
-                transition: 0.1s ease-in-out;
-                height: 131px;
-                margin: 0 auto;
-
-            }
-
-            .skills__card:hover .PhotoShop{
-
-                background: url("pic/Ps_orange.svg")
+           .skills__card:hover .skill_icon{
+                opacity: 1;
             }
 
 
-            .HTML5{
-                background: url(pic/HTML5.svg);
-                width: 115px;
-                transition: 0.1s ease-in-out;
-                height: 131px;
-                margin: 0 auto;
-
-            }
-            .skills__card:hover .HTML5{
-
-                background: url("pic/HTML5_orange.svg")
+            .percentage{
+                transition: 0.2s ease-in-out;
+               display: none;
             }
 
-            .CSS{
-                background: url(pic/CSS.svg);
-                width: 115px;
-                transition: 0.1s ease-in-out;
-                height: 131px;
-                margin: 0 auto;
-
+            .skills__card:hover .comment{
+            display: none;
             }
-            .skills__card:hover .CSS{
-
-                background: url("pic/CSS_orange.svg")
-            }
-
-
-            .Illustrator{
-                background: url(pic/Illustrator.svg);
-                width: 115px;
-                transition: 0.1s ease-in-out;
-                height: 131px;
-                margin: 0 auto;
-
-            }
-            .skills__card:hover .Illustrator{
-
-                background: url("pic/Illustrator_orange.svg")
-            }
-
-            .Blender{
-                background: url(pic/Blender.svg);
-                width: 115px;
-                transition: 0.1s ease-in-out;
-                height: 131px;
-                margin: 0 auto;
-
-            }
-            .skills__card:hover .Blender{
-
-                background: url("pic/Blender_orange.svg")
-            }
-
-            .skills__card:hover .Git{
-
-                background: url("pic/Git_orange.svg")
+            .skills__card:hover .percentage{
+                transition: 0.2s ease-in-out;
+                display: inline;
             }
 
 
 
-
-            .My__designs{
-                text-align: center;
-                margin: 80px auto 0;
-                max-width: 500px;
-                height: 100px;
-                padding-bottom: 15px;
-                outline:
-                        3px
-                        dotted
-                        #8e9092;
-                border-radius: 90px;
-                transition: 0.4s ease-out;
-
-            }
-            .my__designs__link{
-                color: white;
-                font-weight: 700;
-                font-size: 75px;
-                transition: 0.2s ease-out;
-
-            }
 
         .card:hover .date h5{
             color: #FF7A00;
         }
-             .My__designs:hover .my__designs__link,.My__designs:hover{
-                border-color: #1E2225;
-                color: #FF7A00;
 
-            }
 
         footer{
             font-family: 'Poppins', sans-serif;
@@ -447,17 +351,56 @@
         .link_f:hover{
             filter: none;
         }
-
+        .designs_button{
+            margin: auto;
+            text-align: center;
+        }
+        .designs_link:hover{
+            color: #FF7A00;
+        }
+        .designs_link {
+            transition: 0.2s ease-in-out;
+            max-width: 300px;
+            text-align: center;
+            margin: 3rem auto auto;
+            background: transparent;
+            color: #ffffff;
+            font-weight: 400; font-size: 30px;
+            text-transform: uppercase;
+            border: 2px solid #fd7901;
+            border-radius: 50px;
+            padding: 10px 30px;
+            transform: translate(0);
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .designs_link::before {
+            content: "";
+            position: absolute;
+            background: #fd7901;
+            width: 5px;
+            top: 0;
+            bottom: 0;
+            left: -32px;
+            transform: rotate(-16deg);
+            filter: blur(5px);
+        }
+        .designs_link:hover::before {
+            left: calc(100% + 32px);
+            transition: .8s;
+        }
         @media (max-width:1200px) {
             .container{
                 margin: 0 auto;
                 max-width: 970px;
             }
-            .social__media{
-                justify-content: center;
+            .social__media {
                 display: flex;
-                padding: 0 0 15px 0;
+                justify-content: space-around;
+                max-width: 400px;
+                margin: auto;
             }
+
             .main__info{
                 text-align: center;
                 padding: 0;
@@ -480,7 +423,7 @@
         @media (max-width:767px) {
             .container{
                 margin: 0 auto;
-                max-width: none;
+                max-width: 420px;
             }
             .logo{
                 font-size: 23px;
@@ -508,16 +451,7 @@
                 margin: 0;
             }
 
-           .my__designs__link{
-               font-size: 30px;
 
-           }
-           .My__designs{
-               max-width: 200px;
-               height: 34px;
-               margin: 40px auto 0;
-
-           }
            .rsm__btn{
                margin: auto auto 20px;
            }
@@ -538,8 +472,13 @@
            }
 
         }
-        @media (max-width:380px) {
-
+        @media (max-width:425px) {
+            .designs_link{
+                font-size: 20px;
+            }
+            .social__media .link_f{
+                width: 35px;
+            }
             .logo{
                 font-size: 17px;
             }
@@ -577,6 +516,18 @@
             h5{
                 font-size: 13px;
             }
+
+        }
+        @media (max-width:330px) {
+        .skills__card{
+            max-width: 82px;
+        }
+        .skills__card span{
+            font-size: 15px;
+        }
+        .skill_icon{
+            width: 50px;
+        }
         }
 
 
