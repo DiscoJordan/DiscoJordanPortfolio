@@ -355,17 +355,21 @@
             margin: auto;
             text-align: center;
         }
-        .designs_link:hover{
+        .resume_button{
+            padding-top: 10px;
+        }
+        .designs_link:hover, .resume_link:hover {
             color: #FF7A00;
         }
-        .designs_link {
+        .designs_link ,.resume_link {
             transition: 0.2s ease-in-out;
             max-width: 300px;
             text-align: center;
             margin: 3rem auto auto;
             background: transparent;
             color: #ffffff;
-            font-weight: 400; font-size: 30px;
+            font-weight: 400;
+            font-size: 30px;
             text-transform: uppercase;
             border: 2px solid #fd7901;
             border-radius: 50px;
@@ -374,7 +378,13 @@
             overflow: hidden;
             cursor: pointer;
         }
-        .designs_link::before {
+        .resume_link{
+            padding: 6px 20px;
+            right: 0;
+            font-size: 20px;
+            margin: auto;
+        }
+        .designs_link::before, .resume_link::before{
             content: "";
             position: absolute;
             background: #fd7901;
@@ -385,7 +395,7 @@
             transform: rotate(-16deg);
             filter: blur(5px);
         }
-        .designs_link:hover::before {
+        .designs_link:hover::before, .resume_link:hover::before {
             left: calc(100% + 32px);
             transition: .8s;
         }
@@ -451,10 +461,7 @@
                 margin: 0;
             }
 
-
-           .rsm__btn{
-               margin: auto auto 20px;
-           }
+            
            .resume{
                padding-bottom: 40px;
            }
@@ -473,6 +480,11 @@
 
         }
         @media (max-width:425px) {
+            .resume_button{
+                margin: auto;
+                padding: 0 0 10px;
+            }
+
             .designs_link{
                 font-size: 20px;
             }
