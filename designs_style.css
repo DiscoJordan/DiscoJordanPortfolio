@@ -103,13 +103,14 @@ h3{
     }
         .case_card{
             max-width: 550px;
-            transition: 0.2s ease-in-out;
+
         }
         .case_card:hover h3{
             color: #ff7a00;
         }
         .case_card:hover {
-            filter: drop-shadow(0px 0px 30px #944700);
+            filter: drop-shadow(0px 0px 30px #944700) contrast(100%);
+            transition: 0.2s ease-in-out ;
         }
 
             .case_card_text, .second_floor_photos, .case_cards{
@@ -119,17 +120,20 @@ h3{
             .case_cards{
                 margin: auto;
                 flex-wrap: wrap;
-
             }
             .line{
                 margin-top: 20px;
                 height: 2px;
                 background-color: #c4c4c4;
             }
-            .case_card_photos, .second_photo_div, .third_photo_div{
+            .case_card_photos{
+                filter: contrast(60%) blur(2px);
                 transition: 0.2s ease-in-out;
                 max-width: 750px;
                 overflow: hidden;
+            }
+            .case_card:hover .case_card_photos{
+                filter: contrast(100%);
             }
             .main_photo{
                 margin: 3% 0;
@@ -174,10 +178,9 @@ h3{
 footer{
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
-    height: 80px;
+    height: 70px;
     background-color: #3a3a3b;
     margin:  0 auto;
-    padding-top: 5px;
 }
 .rights{
     text-align: center;
@@ -189,13 +192,14 @@ footer{
 .sm{
     justify-content: space-around;
     display: flex;
-    padding: 6px 20px;
+    padding-top: 7px;
     margin: 0 auto;
     max-width: 300px;
 }
 .link_f{
     filter: grayscale(100%);
-    width: 40px;
+    width: 35px;
+
     transition: 0.1s ease-in-out;
 }
 .link_f:hover{
@@ -404,6 +408,13 @@ max-width: 280px;
     }
     .line{
         margin-top: 5px;
+    }
+    .case_card_photos{
+        filter: none;
+
+    }
+    .case_card:hover .case_card_photos{
+        filter: none;
     }
 }
 

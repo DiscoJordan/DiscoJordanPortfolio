@@ -230,8 +230,6 @@
                 transition: 0.1s ease-in-out;
             }
             .card__header{
-
-
                 margin-bottom: 10px;
                 display: flex;
                 justify-content: space-between
@@ -339,10 +337,9 @@
         footer{
             font-family: 'Poppins', sans-serif;
             color: #ffffff;
-            height: 80px;
+            height: 70px;
             background-color: #3a3a3b;
             margin:  0 auto;
-            padding-top: 5px;
         }
         .rights{
             text-align: center;
@@ -354,13 +351,14 @@
         .sm{
             justify-content: space-around;
             display: flex;
-            padding: 6px 20px;
+            padding-top: 7px;
             margin: 0 auto;
             max-width: 300px;
         }
         .link_f{
             filter: grayscale(100%);
-            width: 40px;
+            width: 35px;
+
             transition: 0.1s ease-in-out;
         }
         .social__media .link_f{
@@ -382,7 +380,6 @@
         }
         .designs_link ,.resume_link {
             transition: 0.2s ease-in-out;
-            max-width: 300px;
             text-align: center;
             margin: 3rem auto auto;
             background: transparent;
@@ -570,15 +567,11 @@
             .resume__header{
                 display: block;
             }
-            .resume_button{
+            .resume_button a{
                 margin: 0 auto 20px;
-
+               display: block;
+                max-width: 130px;
             }
-
-            .resume_button{
-                max-width: 166px;
-            }
-
 
             .designs_link{
                 font-size: 20px;
