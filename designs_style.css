@@ -26,12 +26,14 @@ h3{
     text-decoration: none;
 }
 .header{
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     width: 100%;
     Z-index:  50;
     position: fixed;
-    top: 0;
+    top: -1px;
     left: 0;
+    background-color: #ffffff;
 }
 .header:before{
     content: '';
