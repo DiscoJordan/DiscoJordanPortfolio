@@ -7,6 +7,10 @@ body, header{
         max-width: 1200px;
         padding: 0 25px;
     }
+    .logo__link{
+        text-decoration: none;
+        z-index: 3;
+    }
 h1{
     color: #FF7A00;
     font-weight: 700;
@@ -46,7 +50,8 @@ h3{
     z-index: 2;
     filter: drop-shadow(0 -70px 40px black);
 }
-    .header__inner{
+    .header_inner{
+        margin: 0 auto;
         position: relative;
         height: 80px;
         max-width: 1820px;
@@ -162,7 +167,7 @@ h3{
 
         }
         .single_photo_div{
-            margin-top: 3.5%;
+            margin-top: 6%;
             filter: drop-shadow(5px 0px 30px #000000);
             max-width: 350px;
             overflow: hidden;
@@ -300,7 +305,7 @@ max-width: 280px;
 
 }
 @media (max-width:767px) {
-    .header__inner{
+    .header_inner{
         height: 50px;
     }
     .logo{
