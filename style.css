@@ -54,13 +54,13 @@
             .main_link{
                 z-index: 2;
                 color: #3A3A3A ;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 700;
                 text-decoration: none;
                 display: block;
                 text-align: right;
                 transition: 0.1s ease-in-out;
-                margin-left: 30px;
+                margin-left: 20px;
                 text-transform: uppercase;
             }
             .main_link:hover{

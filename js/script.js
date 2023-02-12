@@ -8,7 +8,35 @@ $(document).ready(function (){
         $(".single_photos").css("display","flex");
     });
 });
-document.addEventListener('DOMContentLoaded', function(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*document.addEventListener('DOMContentLoaded', function(){
     const form = document.getElementById('form');
     form.addEventListener('submit', formSend);
 
@@ -19,11 +47,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
         let formData = new FormData(form);
         formData.append('image', formImage.files[0]);
-        
+
 
         if(error === 0){
              form.classList.add('_sending');
-             
+
            /* let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
@@ -35,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 form.reset();
             } else{
                 alert('Error');
-            }*/
+
         }else{
             alert('Заполните обязательные поля');
         }
@@ -85,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     const formImage = document.getElementById('formImage');
     const formPreview = document.getElementById('formPreview');
-    
+
     formImage.addEventListener('change', ()=>{
         uploadFile(formImage.files[0]);
     });
@@ -100,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function(){
             alert('Файл должен быть менее 2 МБ.');
             return;
         }
-    
+
 
         var reader = new FileReader();
         reader.onload = function (e) {
@@ -111,6 +139,6 @@ document.addEventListener('DOMContentLoaded', function(){
         };
         reader.readAsDataURL(file);
     }
-    
 
-});
+
+});}*/
