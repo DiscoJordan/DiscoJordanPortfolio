@@ -106,16 +106,6 @@ h3{
     background: url(./pic/letter.jpg);
 
 }
-.letter__message{
-
-    position: relative;
-background-image: url(../pic/letter.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  max-height: 803px;
-    margin: 0 auto;
-    max-width: 100%;
-}
 
 
 .letter__message{
@@ -130,8 +120,9 @@ background-image: url(../pic/letter.jpg);
     text-indent: 25px;
 }
 .letter__leftside{
-    max-width: 400px;
+    width: 400px;
 }
+
 .letter__rightside{
     margin: 6rem 0 0 0;
 }
