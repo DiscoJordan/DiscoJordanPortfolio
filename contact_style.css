@@ -102,7 +102,7 @@ h3{
     height: 803px;
     overflow: hidden;
     margin: 0 auto;
-    background: url(../pic/letter.jpg);
+    background: url(./pic/letter.jpg);
 
 }
 .letter__message{
