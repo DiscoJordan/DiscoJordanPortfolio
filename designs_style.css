@@ -494,6 +494,9 @@ max-width: 280px;
     .case_card:hover .case_card_photos{
         filter: none;
     }
+    .case_card:hover {
+        transform: none;
+    }
 }
 
 @media (max-width:425px) {
