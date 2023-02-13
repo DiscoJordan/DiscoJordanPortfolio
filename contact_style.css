@@ -20,7 +20,7 @@ h2,h3{
     margin: 0;
     color: #3a3a3a;
     font-weight: 600;
-    font-size: 26px;
+    max-font-size: 26px;
 }
 h3{
     font-family: "Segoe Script", serif;
@@ -103,15 +103,17 @@ h3{
     height: 803px;
     overflow: hidden;
     margin: 0 auto;
-    background: url(./pic/letter.jpg);
+    background: url(./pic/letter.jpg) no-repeat;
+    background-size: contain;
+
 
 }
 
 
 .letter__message{
     margin: 60px auto ;
-    padding-top: 100px;
-    max-width: 900px;
+    padding-top: 5%;
+    max-width: 800px;
     display: flex;
     justify-content: space-between;
    
@@ -124,7 +126,7 @@ h3{
 }
 
 .letter__rightside{
-    margin: 6rem 0 0 0;
+    margin: 10% 0 0 0;
 }
 
 button {
@@ -227,12 +229,28 @@ button:hover::after {
         margin: 0 auto;
         max-width: 970px;
     }
+    h2, button{
+        font-size: 20px
+    }
+    .header_inner {
+        height: 50px;
+    }
+    .letter__message{
+        max-width: 700px;
+    }
 
 }
 @media (max-width:992px) {
     .container{
         margin: 0 auto;
         max-width: 750px;
+    }
+    h2, button{
+        font-size: 16px
+    }
+
+    .letter__message{
+        max-width: 600px;
     }
 
 
@@ -241,13 +259,16 @@ button:hover::after {
 
 
 
-
-
-
-
-
-
 @media (max-width:767px) {
+   .letter{
+       rotate: 90deg;
+       max-height: 280px;
+      
+   }
+    .letter__message{
+        rotate: -90deg;
+    }
+    
     .header_inner {
         height: 50px;
     }
