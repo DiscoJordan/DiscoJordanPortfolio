@@ -94,7 +94,7 @@ h2,h3{
 
 }
 .parallax{
-    background: url(../pic/designs.jpg) fixed ;
+    background: url(./pic/designs.jpg) fixed ;
     min-height: 400px;
     margin: 0 auto;
     display: flex;
