@@ -15,7 +15,13 @@ h1{
     color: #ffffff;
     font-weight: 700;
     font-size: 90px;
-
+}
+h4{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 0;
+    padding: 20px 0;
 }
 h2,h3{
     margin: 0;
@@ -24,10 +30,10 @@ h2,h3{
     max-font-size: 26px;
 }
 h3{
-    font-family: "Segoe Script", serif;
+    font-family: "Marck Script", serif;
     margin: 0;
     font-size: 60px;
-    color: #FF7A00FF ;
+    color: #000000;
 }
 
 .header{
@@ -105,11 +111,16 @@ h3{
 
 .dark_block{
     margin: 0 auto;
-    padding-top: 60px;
-    background-color: #3A3A3A;
+    padding: 60px 0;
+    background-color: #1E2225;
+}
+.light_block{
+    margin: 0 auto ;
+    background-color: #000000;
 }
 .letter{
     background: url(./pic/letter.jpg);
+
     max-width: 100%;
     height: auto;
     overflow: hidden;
@@ -165,9 +176,11 @@ button {
 }
 .tg__btn button{
     background-color: #007fff;
+    width: 280px;
 }
 .inst__btn button{
     background-color: #fd0000;
+    width: 280px;
 }
 .letter__message a{
     text-decoration: none;
@@ -277,27 +290,33 @@ footer{
     }
 
     .letter__message{
-        max-width: 700px;
+        max-width: 800px;
     }
-
+    h4 {
+        font-size: 21px;
+    }
 }
 @media (max-width:992px) {
     .container{
         margin: 0 auto;
         max-width: 750px;
     }
-    h2, button{
+    h2, h4, button{
         font-size: 16px
     }
     h3{
         font-size: 40px;
     }
 
+
     .letter__message{
         max-width: 550px;
     }
     .letter__leftside{
         width: 300px;
+    }
+    .inst__btn button, .tg__btn button{
+        width: 200px;
     }
 
 
@@ -328,7 +347,9 @@ footer{
         display: block;
         margin: 20px auto;
     }
-    
+    h4 {
+        font-size: 10px;
+    }
     .header_inner {
         height: 50px;
     }
@@ -419,6 +440,9 @@ footer{
     }
 }
 @media (max-width:425px) {
+    .dark_block{
+        padding: 20px 0;
+    }
     .parallax{
         background-size: 750px;
         min-height: 200px;
@@ -433,10 +457,13 @@ footer{
     h2, button{
         font-size: 12px
     }
+
     h3{
         font-size: 25px;
     }
-
+    .inst__btn button, .tg__btn button{
+        width: 150px;
+    }
     .letter__message{
 
         margin: 30px auto;
