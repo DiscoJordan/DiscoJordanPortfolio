@@ -359,16 +359,33 @@
             max-width: 300px;
         }
         .link_f{
-            filter: grayscale(100%);
+            fill: gray;
             width: 35px;
-
             transition: 0.1s ease-in-out;
         }
+
         .social__media .link_f{
             width: 50px;
         }
-        .link_f:hover{
-            filter: none;
+        .link_f:hover .tg_f{
+            transition: all 0.2s ease-in-out;
+            fill:#0099FF;
+        }
+        .link_f:hover .in_f{
+            transition: all 0.2s ease-in-out;
+            fill: #006bd9;
+        }
+        .link_f:hover .be_f{
+            transition: all 0.2s ease-in-out;
+            fill:#0029FF ;
+        }
+        .link_f:hover .git_f{
+            transition: all 0.2s ease-in-out;
+            fill:#8500FF ;
+        }
+        .link_f:hover .inst_f{
+            transition: all 0.2s ease-in-out;
+            fill: #ff4d00;
         }
         .designs_button{
             margin: auto;
