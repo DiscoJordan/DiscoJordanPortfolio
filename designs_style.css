@@ -231,7 +231,7 @@ h2,h3{
         .spoiler__title.active:after{
             transform: rotate(45deg);
         }
-   
+
         .single_photos{
 
             display: none;
