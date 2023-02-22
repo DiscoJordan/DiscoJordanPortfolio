@@ -116,16 +116,51 @@ h3{
 }
 .light_block{
     margin: 0 auto ;
-    background-color: #000000;
+    background-color: #1E2225;
+}
+.container__letter {
+    position: relative;
+}
+
+.container__letter::before, .container__letter::after {
+    content: "";
+    background-color: rgba(157, 73, 28, 0.5);
+    position: absolute;
+}
+
+.container__letter::before {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    top: 30%;
+    right: 7%;
+}
+.container__letter .letter {
+
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: .7rem;
+    transition: all ease .3s;
+}
+.container__letter .letter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container__letter .letter:hover {
+    box-shadow: 0 0 20px 1px #ffbb763f;
+    border: 1px solid rgba(255, 255, 255, 0.454);
 }
 .letter{
     /*background: url(./pic/letter.jpg);*/
-background: #0a0a0a;
+background: #1E2225;
     max-width: 100%;
     height: auto;
     overflow: hidden;
     margin: 0 auto ;
-    border: 5px dashed #1E2225;
+    border: 5px dashed #ffffff;
     border-radius: 30px;
 
 }
@@ -133,7 +168,7 @@ background: #0a0a0a;
 
 .letter__message{
     margin: 70px auto ;
-    max-width: 800px;
+    width: 800px;
     display: flex;
     justify-content: space-between;
    
@@ -165,8 +200,8 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 50px;
-    color: #fff;
-    background-color: #442100;
+    color: #000000;
+    background-color: #ffffff;
     font-weight: 600;
     font-size: 26px;
     z-index: 0;
@@ -178,9 +213,11 @@ button {
 }
 .tg__btn button:hover{
     background-color: #007fff;
+    color: #ffffff;
 }
 .inst__btn button:hover{
     background-color: #fd4300;
+    color: #ffffff;
 }
 .letter__message a{
     text-decoration: none;
@@ -191,6 +228,7 @@ button {
 button:hover {
     animation: sh0 0.5s ease-in-out both;
     background-color: #ff8000;
+    color: #ffffff;
 }
 
 @keyframes sh0 {
@@ -355,6 +393,7 @@ footer{
 
     .letter__message{
         display: block;
+        max-width: 300px;
     }
     .letter__leftside, .letter__rightside{
         margin: 0 auto;
@@ -368,7 +407,7 @@ footer{
         margin: 20px auto;
     }
     h4 {
-        font-size: 12px;
+        font-size: 13px;
     }
     .header_inner {
         height: 50px;
