@@ -21,7 +21,7 @@ h4{
     font-weight: 700;
     font-size: 26px;
     margin: 0;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 h2,h3{
     margin: 0;
@@ -111,7 +111,7 @@ h3{
 
 .dark_block{
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 60px 0 0 0;
     background-color: #1E2225;
 }
 .light_block{
@@ -124,7 +124,7 @@ h3{
 
 .container__letter::before, .container__letter::after {
     content: "";
-    background-color: rgba(157, 73, 28, 0.5);
+    background-color: rgba(217, 93, 25, 0.5);
     position: absolute;
 }
 
@@ -140,8 +140,7 @@ h3{
     background-color: rgba(255, 255, 255, 0.074);
     border: 1px solid rgba(255, 255, 255, 0.222);
     -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    border-radius: .7rem;
+    backdrop-filter: blur(40px);
     transition: all ease .3s;
 }
 .container__letter .letter {
@@ -189,36 +188,27 @@ background: #1E2225;
     background-color: #3A3A3A;
 }
 button {
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    width: 290px;
     position: relative;
     margin: 30px 0 0 0;
-    padding: 0.8em 1em;
+    padding: 0.7em 0.7em;
     outline: none;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border: none;
     border-radius: 50px;
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
     font-weight: 600;
     font-size: 26px;
     z-index: 0;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
-.tg__btn button,.inst__btn button{
-    width: 280px;
-}
-.tg__btn button:hover{
-    background-color: #007fff;
-    color: #ffffff;
-}
-.inst__btn button:hover{
-    background-color: #fd4300;
-    color: #ffffff;
-}
+
 .letter__message a{
     text-decoration: none;
     color: #ff8000;
@@ -227,7 +217,7 @@ button {
 
 button:hover {
     animation: sh0 0.5s ease-in-out both;
-    background-color: #ff8000;
+    border: 1px solid rgb(253, 121, 1);
     color: #ffffff;
 }
 
@@ -267,7 +257,7 @@ button::after {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #ffffff;
+    background: #fd7901;
     opacity: 0;
     transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
     z-index: -1;
@@ -373,7 +363,7 @@ footer{
     .letter__leftside{
         width: 300px;
     }
-    .inst__btn button, .tg__btn button{
+    button {
         width: 200px;
     }
 
@@ -520,7 +510,7 @@ footer{
     h3{
         font-size: 25px;
     }
-    .inst__btn button, .tg__btn button{
+    button {
         width: 150px;
     }
     .letter__message{
