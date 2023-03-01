@@ -43,7 +43,15 @@ if(animItems.length > 0) {
 
 
 
+$(function(){
 
+    $('.scroll_down').on('click', function(e){
+        $('html,body').stop().animate({ scrollTop: $('#down').offset().top }, 1000);
+        e.preventDefault();
+        behavior: 'smooth';
+    });
+
+});
 
 
 

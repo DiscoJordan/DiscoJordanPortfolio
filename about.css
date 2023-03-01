@@ -85,7 +85,23 @@
                 max-width: 100%;
                 padding-top: 30px;
             }
-
+            .scroll_down{
+                text-align: center;
+                z-index: 9;
+                font-size: 20px;
+                color: black ;
+                position: center;
+                text-decoration: none;
+                scroll-behavior: smooth;
+            }
+        .scroll_down a{
+            text-decoration: none;
+            color: black ;
+            scroll-behavior: smooth;
+        }
+            .scroll_down a:hover{
+                color: #ff7a00;
+            }
         .intro {
             padding-bottom: 30px;
             }
@@ -161,6 +177,7 @@
             }
 
         .resume{
+            scroll-behavior: smooth;
             width: auto;
             height: auto;
             background-color: #1E2225;
@@ -474,6 +491,9 @@
             .info{
                 padding: 30px 0 ;
                 margin: 0;
+            }
+            .scroll_down{
+                display: none;
             }
         }
 
