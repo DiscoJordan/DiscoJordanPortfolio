@@ -77,13 +77,7 @@ h3{
     display: flex;
     justify-content: space-between;
 }
-.logo{
-    z-index: 3;
-    font-size: 48px;
-    font-weight: 700;
-    margin: 0 0 0 20px;
-    color: #3A3A3A;
-}
+
 .nav{
     margin: 0 20px 0 0;
     display: flex;
