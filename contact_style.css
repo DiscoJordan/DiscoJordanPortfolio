@@ -425,7 +425,7 @@ footer{
 
     .logo{
         z-index: 3;
-        margin: auto 0 auto 20px;
+        margin: 0;
         height: 47px;
 
     }
