@@ -11,15 +11,19 @@
 
         }
             .logo__link{
+                display: block;
                 text-decoration: none;
                 z-index: 3;
+                margin: auto 0 auto 20px;
+
+
             }
             .logo{
                 z-index: 3;
-                font-size: 48px;
-                font-weight: 700;
-                margin: 0 0 0 20px;
-                color: #3A3A3A;
+                display: block;
+                height: 60px;
+                margin: auto;
+
             }
 
             .header_inner{
@@ -510,8 +514,12 @@
                 height: 50px;
             }
             .logo{
-                font-size: 26px;
+                z-index: 3;
+                margin: auto 0 auto 20px;
+                height: 47px;
+
             }
+
             .container{
                 margin: 0 auto;
                 max-width: 420px;
