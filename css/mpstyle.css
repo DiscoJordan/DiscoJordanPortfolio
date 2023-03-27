@@ -312,3 +312,38 @@ footer {
           transform: translate(0px, 0px);
   opacity: 0.8;
 }
+
+.project_date {
+  text-align: center;
+}
+.project_date .date_group {
+  padding-top: 5vh;
+  margin: 0 auto;
+  color: #757575;
+  display: inline-block;
+}
+.project_date .date_group .launched {
+  font-weight: 700;
+  opacity: 0.7;
+}
+.project_date .date_group .date {
+  font-weight: 500;
+}
+
+.separator-line {
+  position: relative;
+  z-index: 30;
+  margin: 71px auto;
+  width: 2px;
+  height: 112px;
+}
+
+.separator-line:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  background: #49ff87;
+}

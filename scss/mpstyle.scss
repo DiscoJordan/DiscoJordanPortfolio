@@ -1,4 +1,8 @@
 @import "hf";
+$primary-color: #49ff87;
+$secondary-color: #3A3A3A;
+$third-color: #757575;
+
 .parallax{
   background: url(../pic/mpcover.jpg) fixed ;
   min-height: 400px;
@@ -8,7 +12,7 @@
   align-items: center;
   padding-top: 80px;
   .fullscreen__title{
-    color:#49ff87;
+    color: $primary-color;
     transform: translate(0px, 13%);
     opacity: 0;
     transition: all 0.6s ease-in-out;
@@ -19,4 +23,39 @@
 .spoiler._active, .designs_link._active{
   transform: translate(0px, 0px);
   opacity: 0.8;
+}
+.project_date{
+  text-align: center;
+
+  .date_group{
+    padding-top: 5vh;
+    margin: 0 auto;
+    color: $third-color;
+    display: inline-block;
+
+    .launched{
+      font-weight: 700;
+      opacity: 0.7;
+    }
+    .date{
+      font-weight: 500;
+    }
+  }
+}
+.separator-line {
+  position: relative;
+  z-index: 30;
+  margin: 71px auto;
+  width: 2px;
+  height: 112px;
+
+ }
+.separator-line:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 100%;
+  height: 100%;
+  background: $primary-color;
 }
