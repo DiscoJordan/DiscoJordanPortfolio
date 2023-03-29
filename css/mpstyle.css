@@ -347,3 +347,21 @@ footer {
   height: 100%;
   background: #49ff87;
 }
+
+.half-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.half-field .project_header {
+  font-size: 40px;
+  min-width: 50%;
+  font-weight: 700;
+}
+.half-field .project_paragraph {
+  font-size: 30px;
+  min-width: 50%;
+  color: #757575;
+}

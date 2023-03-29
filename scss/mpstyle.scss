@@ -59,3 +59,17 @@ $third-color: #757575;
   height: 100%;
   background: $primary-color;
 }
+.half-field{
+  display: flex;
+ justify-content: space-around;
+  .project_header{
+    font-size: 40px;
+    min-width: 50%;
+    font-weight: 700;
+  }
+  .project_paragraph{
+    font-size: 30px;
+    min-width: 50%;
+    color: $third-color;
+  }
+}
