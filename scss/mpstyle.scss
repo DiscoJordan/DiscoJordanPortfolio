@@ -19,6 +19,16 @@ $third-color: #757575;
     text-decoration: none;
   }
 }
+.parallax_link{
+  background: url(../pic/mpfootercover.jpg) fixed ;
+
+  min-height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 .fullscreen__title._active, .case_card._active,
 .spoiler._active, .designs_link._active{
   transform: translate(0px, 0px);
@@ -45,7 +55,7 @@ $third-color: #757575;
 .separator-line {
   position: relative;
   z-index: 30;
-  margin: 71px auto;
+  margin: 50px auto;
   width: 2px;
   height: 112px;
 
@@ -76,4 +86,96 @@ $third-color: #757575;
 .main_mockup {
 max-width: 100%;
   background-repeat: no-repeat;
+}
+
+.design{
+  font-size: 60px;
+  font-weight: lighter;
+  text-align: center;
+  color: #000000;
+p{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+}
+.case-project-link{
+
+.center{
+ color: white;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+  a{
+    text-decoration: underline;
+    color: $primary-color;
+    font-size: 40px;
+    font-weight: 700;
+
+  }
+}
+.tg_btn{
+  text-decoration: none;
+}
+button {
+  margin: 0 auto 50px  auto;
+  font-family: inherit;
+  font-size: 18px;
+  background: $secondary-color;
+  color: white;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+
+
+
+}
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover svg {
+  transform: rotate(45deg);
+}
+button span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+button svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+button .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
 }
