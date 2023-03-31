@@ -504,6 +504,7 @@
                 margin: 0 auto;
                 max-width: 970px;
             }
+
             .social__media {
                 display: flex;
                 justify-content: space-around;
@@ -660,6 +661,10 @@
 
         }
         @media (max-width:425px) {
+            .parallax{
+                background-size: 750px;
+                min-height: 200px;
+            }
             .resume__header{
                 display: block;
             }
