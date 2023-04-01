@@ -193,14 +193,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 80px;
-  z-index: 2;
-  left: 0;
-  top: -17%;
-  width: 100%;
-  height: 134.7222222222%;
-  background-size: auto 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
 }
 .parallax .fullscreen__title {
   color: #49ff87;
@@ -437,6 +429,7 @@ button .svg-wrapper {
   .parallax {
     padding-top: 50px;
     min-height: 300px;
+    background-size: 1000px;
   }
   .parallax_link {
     min-height: 300px;
@@ -537,7 +530,7 @@ button .svg-wrapper {
     max-width: none;
   }
   .parallax {
-    padding-top: 50px;
+    background-size: 750px;
     min-height: 200px;
   }
   .parallax_link {
