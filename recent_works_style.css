@@ -129,17 +129,18 @@ h2,h3{
 
 .website_link{
     text-decoration: none;
+
 }
 .website img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .centered {
     opacity: 0;
     font-size: 40px;
     font-weight: bold;
-    color:#49ff87;
+    color: #FF7A00FF;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,8 +149,14 @@ h2,h3{
 
 .website:hover .centered{
     opacity: 1;
-
 }
+.website_link:hover h2{
+     color: #ff7a00;
+ }
+.website_link  h2{
+    margin-bottom: 40px;
+}
+
 .website:hover img{
     transition: all 0.3s ease-in-out;
     filter: grayscale(100)
@@ -211,6 +218,7 @@ h2,h3{
     color: #ff7a00;
 
 }
+
 
 .case_card:hover .case_card_photos{
     filter: brightness(70%);
